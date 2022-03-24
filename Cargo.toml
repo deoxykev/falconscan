@@ -1,0 +1,33 @@
+[package]
+name = "falconscan"
+version = "0.1.0"
+edition = "2021"
+author = "Kevin Pham <kevin.pham@associates.polb.com>"
+about = "falconx quickscan client"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "stream", "multipart"]}
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.6", features = ["codec"] }
+futures = "0.3"
+serde = { version = "1.0.136", features = ["derive"] }
+chrono = { version = "0.4.19" }
+anyhow = "1.0"
+function_name = "0.2.0"
+rusqlite = {version = "0.27.0", features = ["chrono"] }
+serde_json = "1.0"
+serde_with = { version = "1.12.0", features = ["chrono"] }
+data-encoding = "2.3.2"
+# ring = "0.16.20"
+sha2 = "0.10.2"
+walkdir = "2.3.2"
+itertools = "0.10.3"
+r2d2_sqlite = "0.20.0"
+r2d2 = "0.8.8"
+threadpool =  "1.8.1"
+goblin = "0.5.1"
+
+notify = "4.0.16"
+clap = { version = "3.1.6", features = ["derive"] }
